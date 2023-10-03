@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ＣＡＶＥＲ基礎的なキー配置 CAVER Basic Layout</title>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="ＣＡＶＥＲ基礎的なキー配置 CAVER Basic Layout" />
+    <meta
+      property="og:description"
+      content="Basic layout of the CAVER machine shorthand system"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=M+PLUS+Rounded+1c:wght@400;700&family=Azeret+Mono:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <section>
+      <div lang="ja">
+        <h1>ＣＡＶＥＲ基礎的なキー配置について</h1>
+      </div>
+      <div lang="en">
+        <h1>CAVER Basic Theory</h1>
+        <i>translated by Jennifer Chan and Sammi de Guzman</i>
+      </div>
+    </section>
+    <section>
+      <div lang="ja">
+        <ul class="contents" style="list-style-type: none">
+          <li><a href="#introduction">はじめに</a></li>
+        </ul>
+        <ol class="contents">
+          <li>
+            <a href="#layout">基礎符号の構成</a>
+            <ol>
+              <li><a href="#vowels">母音</a></li>
+              <li><a href="#consonants">子音</a></li>
+              <li><a href="#gojuon">五十音</a></li>
+              <li><a href="#voiced">濁音・半濁音</a></li>
+              <li><a href="#palatal">拗音</a></li>
+            </ol>
+          </li>
+          <li>縮記の構成等
+            <ol>
+              <li><a href="#full-layout">全キーの配置</a></li>
+              <li><a href="#aux-keys">附属音</a></li>
+            </ol>
+          </li>
+          <li><a href="#other-sounds">その他の音</a></li>
+          <li><a href="#numbers-letters">数字・英字</a></li>
+        </ol>
+      </div>
+      <div lang="en">
+        <ul class="contents" style="list-style-type: none">
+          <li><a href="#introduction">Introduction</a></li>
+        </ul>
+        <ol class="contents">
+          <li>
+            <a href="#layout">Basic Key Layout</a>
+            <ol>
+              <li><a href="#vowels">Vowels</a></li>
+              <li><a href="#consonants">Consonants</a></li>
+              <li><a href="#gojuon">Syllable Table</a></li>
+              <li><a href="#voiced">Voiced Syllables</a></li>
+              <li><a href="#palatal">Palatalized Syllables</a></li>
+            </ol>
+          </li>
+          <li>Composing Words
+            <ol>
+              <li><a href="#full-layout">Symmetrical Layout</a></li>
+              <li><a href="#aux-keys">Auxiliary Keys</a></li>
+            </ol>
+          </li>
+          <li><a href="#other-sounds">Other Sounds</a></li>
+          <li><a href="#numbers-letters">Numbers and English Letters</a></li>
+        </ol>
+      </div>
+    </section>
+    <section id="introduction">
+      <div lang="ja">
+        <h2>はじめに</h2>
+        <p>今回、私どもは速記用タイプライターとコンピューターの連携による新しい機械速記システムを開発いたしました。</p>
+        <p>本稿は、この「キャバ（ＣＡＶＥＲ）」(Computer Aided Verbatim Realtime Transcription System）という、パソコン反訳による機械速記システムの前半部分である「速記入力の基準」を示すものです。</p>
+        <p>日本語においてよく使われる音や濁音・拗音等が打ちやすくなるように合理的なキー配列を設計して、効率よく入力できるように工夫しました。</p>
+        <p>また、 １２０年を超える歴史を持つ、日本語速記理論を踏まえ、漢字音の特徴を生かした打ち方や、やまと言葉や常用語、動詞等の変化する語尾の体系的な略法をシステムの中におさめました。</p>
+        <p>さらに、使用される場所や内容に応じて、打ち手が略語や専門語・新語を登録できるようにユーザー用辞書も用意しました。</p>
+        <p>ちなみに、キャバの開発は、聴覚障害者等に対するコミュニケーション支援を行うことを主な目的として進められました。ろう者・中途失聴者・難聴者・外国人等には、日本語の発話は聴取に困難が多く、社会疎外につながりがちです。そこで、発言をできるだけありのままに文字で伝えるボランティア活動に応用できるシステム開発を目指しました。</p>
+        <p align="right">速記懇談会「ＣＡＶＥＲ」開発部会</p>
+      </div>
+      <div lang="en">
+        <h2>Introduction</h2>
+        <p>We have developed a new machine shorthand system that combines a shorthand typewriter and a computer.</p>
+        <p>This article presents the basic principles for shorthand writing, which is the first part of the Computer Aided Verbatim Realtime Transcription System, or CAVER.</p>
+        <p>We have designed a rational keyboard layout to make it easier to write sounds that are often used in Japanese, such as voiced sounds and palatalized sounds, so that they can be written efficiently.</p>
+        <p>In addition, taking into account the 120-year history of Japanese shorthand theory, we have created a system that takes advantage of the distinct characteristics of kanji sounds and systematic abbreviations for the endings of native Japanese words, common nouns, and verbs.</p>
+        <p>Furthermore, we have also prepared a dictionary for users to define briefs, technical terms, and new words depending on the context of usage.</p>
+        <p>The development of CAVER was mainly aimed at providing communication support for people with hearing impairments. Deaf people, people with partial or full hearing loss, foreigners, etc. often have difficulty hearing Japanese speech, which tends to lead to social exclusion. Therefore, we aimed to develop a system that coud be applied to volunteer activities that convey the spoken word as accurately as possible through text.</p>
+        <p align="right">CAVER Shorthand Development Committee</p>
+      </div>
+    </section>
+    <section id="layout">
+      <div lang="ja">
+        <h2>１　基礎符号の構成</h2>
+        <p class="contin">（以下、左キーで示す）</p>
+      </div>
+      <div lang="en">
+        <h2>1　Basic Key Layout</h2>
+        <p class="contin"><i>(Shown below with just the left side)</i></p>
+      </div>
+      <pre class="keyboard large">
+　ＺＭＫ　　　□□□　
+ＶＸＲＳＹ　□□□□□
+　　　ＡＵ＊□□　　　
+      </pre>
+      <div class="steno">
+                           <!-- VZXMRKSYAU*UAYSKRMXZV -->
+        <div><span class="line">VZX                  </span>附属音 / auxiliary sounds</div>
+        <div><span class="line">   MRKS              </span>子音 / consonants</div>
+        <div><span class="line">       YAU           </span>母音等 / vowels, etc.</div>
+      </div>
+    </section>
+    <section id="vowels">
+      <div lang="ja">
+        <h3>１.１　母音</h3>
+        <p>「各列を構成する母音等」は、<code>ＹＡＵ</code>の組み合わせ。</p>
+        <p>（ただし、「い列」は無記号）</p>
+      </div>
+      <div lang="en">
+        <h3>1.1　Vowels</h3>
+        <p>The <code>Y</code>, <code>A</code>, and <code>U</code> keys are combined to make the vowels in each column of the syllable table.</p>
+        <p>Note that the い series does not have a chord.</p>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□□□
+　　　Ａ□
+            </pre>
+            あ列（ア）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□□□
+　　　□□
+            </pre>
+            い列
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□□□
+　　　□Ｕ
+            </pre>
+            う列（ウ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□□Ｙ
+　　　□□
+            </pre>
+            え列（エ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□□□
+　　　ＡＵ
+            </pre>
+            お列（オ）
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□□Ｙ
+　　　Ａ□
+            </pre>
+            ゃ列（ヤ）
+          </td>
+          <td></td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□□Ｙ
+　　　□Ｕ
+            </pre>
+            ゅ列（ユ）
+          </td>
+          <td></td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□□Ｙ
+　　　ＡＵ
+            </pre>
+            ょ列（ヨ）
+          </td>
+        </tr>
+      </table>
+      <div lang="ja">
+        <p>母音等を「●」に置きかえると、</p>
+      </div>
+      <div lang="en">
+        <p>If we replace the vowel keys with ●:</p>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□□□
+　　　●□
+            </pre>
+            ア
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□□□
+　　　□□
+            </pre>
+            　
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□□□
+　　　□●
+            </pre>
+            ウ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□□●
+　　　□□
+            </pre>
+            エ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□□□
+　　　●●
+            </pre>
+            オ
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□□●
+　　　●□
+            </pre>
+            ヤ
+          </td>
+          <td></td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□□●
+　　　□●
+            </pre>
+            ユ
+          </td>
+          <td></td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□□●
+　　　●●
+            </pre>
+            ヨ
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="consonants">
+      <div lang="ja">
+        <h3>１.２　子音</h3>
+        <p>「各行を構成する子音等」は、<code>ＭＲＫＳ</code>の組み合わせ。</p>
+        <p>(ただし、単独では「イ列音」)</p>
+      </div>
+      <div lang="en">
+        <h3>1.2　Consonants</h3>
+        <p>The <code>M</code>, <code>R</code>, <code>K</code>, and <code>S</code> keys are combined to make the consonants in each row of the syllable table.</p>
+        <p>Note that each consonant chord when used on its own has an implicit イ sound.</p>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□Ｋ　
+□□□□□
+　　　□□
+            </pre>
+            か行（キ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□Ｓ□
+　　　□□
+            </pre>
+            さ行（シ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□Ｋ　
+□□□Ｓ□
+　　　□□
+            </pre>
+            た行（チ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□Ｍ□　
+□□Ｒ□□
+　　　□□
+            </pre>
+            な行（ニ）
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□ＲＳ□
+　　　□□
+            </pre>
+            は行（ヒ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□Ｍ□　
+□□□□□
+　　　□□
+            </pre>
+            ま行（ミ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□Ｒ□□
+　　　□□
+            </pre>
+            ら行（リ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□ＭＫ　
+□□ＲＳ□
+　　　□□
+            </pre>
+            わ行（イ）
+          </td>
+        </tr>
+      </table>
+      <div lang="ja">
+        <p>子音等を「■」に置きかえると、</p>
+      </div>
+      <div lang="en">
+        <p>If we replace the consonant keys with ■:</p>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□■　
+□□□□□
+　　　□□
+            </pre>
+            キ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□■□
+　　　□□
+            </pre>
+            シ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□■　
+□□□■□
+　　　□□
+            </pre>
+            チ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□■□　
+□□■□□
+　　　□□
+            </pre>
+            ニ
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□■■□
+　　　□□
+            </pre>
+            ヒ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□■□　
+□□□□□
+　　　□□
+            </pre>
+            ミ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□■□□
+　　　□□
+            </pre>
+            リ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□■■　
+□□■■□
+　　　□□
+            </pre>
+            イ
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section id="gojuon">
+      <div lang="ja">
+        <h3>１.３　基礎五十音図</h3>
+      </div>
+      <div lang="en">
+        <h3>1.3　Syllable Table</h3>
+      </div>
+      <table>
+        <tr>
+          <th></th>
+          <th>あ列<br>Ａ</th>
+          <th>い列<br>□</th>
+          <th>う列<br>Ｕ</th>
+          <th>え列<br>Ｙ</th>
+          <th>お列<br>ＡＵ</th>
+        </tr>
+        <tr>
+          <th>あ行<br>□</th>
+          <td><pre class="keyboard">
+　□□□　
+□□□□□
+　　　●□
+            </pre></td>
+          <td><pre class="keyboard">
+　□■■　
+□□■■□
+　　　□□
+            </pre></td>
+          <td><pre class="keyboard">
+　□□□　
+□□□□□
+　　　□●
+            </pre></td>
+          <td><pre class="keyboard">
+　□□□　
+□□□□●
+　　　□□
+            </pre></td>
+          <td><pre class="keyboard">
+　□□□　
+□□□□□
+　　　●●
+            </pre></td>
+        </tr>
+        <tr>
+          <th>か行<br>Ｋ</th>
+          <td><pre class="keyboard">
+　□□■　
+□□□□□
+　　　●□
+            </pre></td>
+          <td><pre class="keyboard">
+　□□■　
+□□□□□
+　　　□□
+            </pre></td>
+          <td><pre class="keyboard">
+　□□■　
+□□□□□
+　　　□●
+            </pre></td>
+          <td><pre class="keyboard">
+　□□■　
+□□□□●
+　　　□□
+            </pre></td>
+          <td><pre class="keyboard">
+　□□■　
+□□□□□
+　　　●●
+            </pre></td>
+        </tr>
+        <tr>
+          <th>さ行<br>Ｓ</th>
+          <td><pre class="keyboard">
+　□□□　
+□□□■□
+　　　●□
+            </pre></td>
+          <td><pre class="keyboard">
+　□□□　
+□□□■□
+　　　□□
+            </pre></td>
+          <td><pre class="keyboard">
+　□□□　
+□□□■□
+　　　□●
+            </pre></td>
+          <td><pre class="keyboard">
+　□□□　
+□□□■●
+　　　□□
+            </pre></td>
+          <td><pre class="keyboard">
+　□□□　
+□□□■□
+　　　●●
+            </pre></td>
+        </tr>
+        <tr>
+          <th>た行<br>ＫＳ</th>
+          <td><pre class="keyboard">
+　□□■　
+□□□■□
+　　　●□
+            </pre></td>
+          <td><pre class="keyboard">
+　□□■　
+□□□■□
+　　　□□
+            </pre></td>
+          <td><pre class="keyboard">
+　□□■　
+□□□■□
+　　　□●
+            </pre></td>
+          <td><pre class="keyboard">
+　□□■　
+□□□■●
+　　　□□
+            </pre></td>
+          <td><pre class="keyboard">
+　□□■　
+□□□■□
+　　　●●
+            </pre></td>
+        </tr>
+        <tr>
+          <th>な行<br>ＭＲ</th>
+          <td><pre class="keyboard">
+　□■□　
+□□■□□
+　　　●□
+            </pre></td>
+          <td><pre class="keyboard">
+　□■□　
+□□■□□
+　　　□□
+            </pre></td>
+          <td><pre class="keyboard">
+　□■□　
+□□■□□
+　　　□●
+            </pre></td>
+          <td><pre class="keyboard">
+　□■□　
+□□■□●
+　　　□□
+            </pre></td>
+          <td><pre class="keyboard">
+　□■□　
+□□■□□
+　　　●●
+            </pre></td>
+        </tr>
+        <tr>
+          <th>は行<br>ＲＳ</th>
+          <td><pre class="keyboard">
+　□□□　
+□□■■□
+　　　●□
+            </pre></td>
+          <td><pre class="keyboard">
+　□□□　
+□□■■□
+　　　□□
+            </pre></td>
+          <td><pre class="keyboard">
+　□□□　
+□□■■□
+　　　□●
+            </pre></td>
+          <td><pre class="keyboard">
+　□□□　
+□□■■●
+　　　□□
+            </pre></td>
+          <td><pre class="keyboard">
+　□□□　
+□□■■□
+　　　●●
+            </pre></td>
+        </tr>
+        <tr>
+          <th>ま行<br>Ｍ</th>
+          <td><pre class="keyboard">
+　□■□　
+□□□□□
+　　　●□
+            </pre></td>
+          <td><pre class="keyboard">
+　□■□　
+□□□□□
+　　　□□
+            </pre></td>
+          <td><pre class="keyboard">
+　□■□　
+□□□□□
+　　　□●
+            </pre></td>
+          <td><pre class="keyboard">
+　□■□　
+□□□□●
+　　　□□
+            </pre></td>
+          <td><pre class="keyboard">
+　□■□　
+□□□□□
+　　　●●
+            </pre></td>
+        </tr>
+        <tr>
+          <th>や行<br>Ｙ</th>
+          <td><pre class="keyboard">
+　□□□　
+□□□□●
+　　　●□
+            </pre></td>
+          <td></td>
+          <td><pre class="keyboard">
+　□□□　
+□□□□●
+　　　□●
+            </pre></td>
+          <td></td>
+          <td><pre class="keyboard">
+　□□□　
+□□□□●
+　　　●●
+            </pre></td>
+        </tr>
+        <tr>
+          <th>ら行<br>Ｒ</th>
+          <td><pre class="keyboard">
+　□□□　
+□□■□□
+　　　●□
+            </pre></td>
+          <td><pre class="keyboard">
+　□□□　
+□□■□□
+　　　□□
+            </pre></td>
+          <td><pre class="keyboard">
+　□□□　
+□□■□□
+　　　□●
+            </pre></td>
+          <td><pre class="keyboard">
+　□□□　
+□□■□●
+　　　□□
+            </pre></td>
+          <td><pre class="keyboard">
+　□□□　
+□□■□□
+　　　●●
+            </pre></td>
+        </tr>
+        <tr>
+          <th>わ行<br>ＭＲＫＳ</th>
+          <td><pre class="keyboard">
+　□■■　
+□□■■□
+　　　●□
+            </pre></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><pre class="keyboard">
+　□■■　
+□□■■□
+　　　●●
+            </pre></td>
+        </tr>
+      </table>
+    </section>
+    <section id="voiced">
+      <div lang="ja">
+        <h3>１.４　濁音・半濁音</h3>
+        <p>「濁音・半濁音」は、それぞれ各行キーと「Ｍ・Ｋ」キーの同時押し。</p>
+      </div>
+      <div lang="en">
+        <h3>1.4　Voiced Syllables</h3>
+        <p>To write voiced syllables, press the corresponding consonant chord and the <code>M</code> or <code>K</code> key at the same time.</p>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□Ｍ■　
+□□□□□
+　　　□□
+            </pre>
+            が行（ギ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□Ｍ□　
+□□□■□
+　　　□□
+            </pre>
+            ざ行（ジ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□Ｍ■　
+□□□■□
+　　　□□
+            </pre>
+            だ行（ヂ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□Ｍ□　
+□□■■□
+　　　□□
+            </pre>
+            ば行（ビ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□Ｋ　
+□□■■□
+　　　□□
+            </pre>
+            ぱ行（ピ）
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section id="palatal">
+      <div lang="ja">
+        <h3>１.５　拗音</h3>
+        <p>「拗音」は、それぞれ各行キーと「ヤ・ユ・ヨ」該当キーの同時押し。</p>
+      </div>
+      <div lang="en">
+        <h3>1.5　Palatalized Syllables</h3>
+        <p>To write palatalized syllables, press the corresponding consonant chord and the chord for ヤ, ユ, or ヨ at the same time.</p>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□■　
+□□□□●
+　　　●□
+            </pre>
+            キャ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□■　
+□□□□●
+　　　□●
+            </pre>
+            キュ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□■　
+□□□□●
+　　　●●
+            </pre>
+            キョ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+□□□■●
+　　　●□
+            </pre>
+            シャ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□■　
+□□□■●
+　　　●□
+            </pre>
+            チャ
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section id="full-layout">
+      <div lang="ja">
+        <h2>２　縮記の構成等</h2>
+        <h3>２.１　全キーの配置（左右対称）</h3>
+      </div>
+      <div lang="en">
+        <h2>2　Composing Words</h2>
+        <h3>2.1　Symmetrical Layout</h3>
+      </div>
+      <pre class="keyboard large">
+　ＺＭＫ　　　ＫＭＺ　
+ＶＸＲＳＹ　ＹＳＲＸＶ
+　　　ＡＵ＊ＵＡ　　　
+      </pre>
+      <div class="steno">
+                           <!-- VZXMRKSYAU*UAYSKRMXZV -->
+        <div><span class="line">VZX                  </span>（Ａ）</div>
+        <div><span class="line">   MRKS              </span>（Ｂ）</div>
+        <div><span class="line">       YAU           </span>（Ｃ）</div>
+        <div><span class="line">          *          </span></div>
+        <div><span class="line">           UAY       </span>（Ｄ）</div>
+        <div><span class="line">              MRKS   </span>（Ｅ）</div>
+        <div><span class="line">                  XZV</span>（Ｆ）</div>
+      </div>
+      <div lang="ja">
+        <p>漢字の音読みには一定のルールがあります。拗音は１音と考えると、２音目は「イ・ウ・キ・ク・チ・ツ・ッ・ン」の８種類のうち、どれか１音です。</p>
+        <p>また、列により接続する音が異なる場合があります。</p>
+        <ol class="lettered">
+          <li>「イ・ウ」は、長音としてまとめます。漢字音のあ列は長音がないので、「あ列」+「イ」とします。</li>
+          <li>「キ・ク」は、Ｋ音としてまとめます。漢字音のえ列はク音はなく、キ音だけですから、「え列」+「キ」とします。</li>
+        </ol>
+        <p>そこで、頻度の少ない「チ」を除き、撥音・促音・長音・Ｋ音・Ｔ音の ５つの書き方にまとめます。</p>
+      </div>
+      <div lang="en">
+        <p>There are certain rules to the <i>on</i> readings of kanji. If we think of palatalized syllables as one sound, the second sound is one of eight types: イ, ウ, キ, ク, チ, ツ, ッ, ン.</p>
+        <p>The connected sounds also differ depending on the final:</p>
+        <ol class="lettered">
+          <li>イ and ウ are long sounds. Since there are no long sounds in the あ series, long sounds are written as あ series + イ.</li>
+          <li>キ and ク are K sounds. Since only キ can come after え and not ク, we write them as え series + キ.</li>
+        </ol>
+        <p>Therefore, excluding the less frequent チ, we have summarized the five ways to write complex sounds.</p>
+      </div>
+    </section>
+    <section id="aux-keys">
+      <div lang="ja">
+        <h3>２.２　附属音</h3>
+        <p>「附属音（主に漢字音）」は、ＶＺＸの組み合わせ。</p>
+      </div>
+      <div lang="en">
+        <h3>2.2　Auxiliary Keys</h3>
+        <p>The auxiliary chords (mainly kanji sounds) are expressed with combinations of the <code>V</code>, <code>Z</code>, and <code>X</code>.</p>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　Ｚ
+□□
+            </pre>
+            撥音（ン）
+          </td>
+          <td>
+            <pre class="keyboard">
+　Ｚ
+□Ｘ
+            </pre>
+            促音（ッ）<br>gemination
+          </td>
+          <td>
+            <pre class="keyboard">
+　□
+□Ｘ
+            </pre>
+            長音（イ・ウ）<br>
+            （ア列はイ）<br>long sound
+          </td>
+          <td>
+            <pre class="keyboard">
+　□
+ＶＸ
+            </pre>
+            Ｋ音（キ・ク）<br>
+            （エ列はキ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　Ｚ
+Ｖ□
+            </pre>
+            Ｔ音（ツ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□
+Ｖ□
+            </pre>
+            英・数
+            （二音文字）<br>alphabet, numbers
+          </td>
+          <td>
+            <pre class="keyboard">
+　Ｚ
+ＶＸ
+            </pre>
+            略語用<br>briefing
+          </td>
+        </tr>
+      </table>
+      <div lang="ja">
+        <p>附属音等を「▲」に置きかえると、</p>
+      </div>
+      <div lang="en">
+        <p>If we replace the keys with ▲:</p>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　▲
+□□
+            </pre>
+            ン
+          </td>
+          <td>
+            <pre class="keyboard">
+　▲
+□▲
+            </pre>
+            ッ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□
+□▲
+            </pre>
+            ー
+          </td>
+          <td>
+            <pre class="keyboard">
+　□
+▲▲
+            </pre>
+            ク
+          </td>
+          <td>
+            <pre class="keyboard">
+　▲
+▲□
+            </pre>
+            ツ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□
+▲□
+            </pre>
+            英・数・二
+          </td>
+          <td>
+            <pre class="keyboard">
+　▲
+▲▲
+            </pre>
+            略語用
+          </td>
+        </tr>
+      </table>
+      <div lang="ja">
+        <p>基礎音と附属音を合わせ、Ａ・Ｂ・Ｃ・Ｄ・Ｅ・Ｆの横に一列の並。
+        が漢字でいえば二字熟語（ＢＣ＋Ａ）＋（ＥＤ＋Ｆ）という２〜４音をあらわせます。</p>
+      </div>
+      <div lang="en">
+        <p>The basic sounds and auxiliary chords (A, B, C, D, E, F) can be combined in one stroke; this translates to a two-character compound comprised of (BC+A) and (ED+F) with 2 to 4 sounds.</p>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□■　　
+□□□□□　
+　　　□□＊
+            </pre>
+            か行（Ｂ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　　
+□□□□●　
+　　　□□＊
+            </pre>
+            え列（Ｃ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　　
+□▲□□□　
+　　　□□＊
+            </pre>
+            長音（Ａ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□■　　
+□▲□□●　
+　　　□□＊
+            </pre>
+            →　ケイ
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　　■□□　
+　□□□□□
+＊□□　　　
+            </pre>
+            か行（Ｅ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　　□□□　
+　□□□□□
+＊□●　　　
+            </pre>
+            あ列（Ｄ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　　□□□　
+　□□□▲▲
+＊□□　　　
+            </pre>
+            ク（Ｆ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　　■□□　
+　□□□▲▲
+＊□●　　　
+            </pre>
+            →　カク
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□■　　　■□□　
+□▲□□●　□□□▲▲
+　　　□□＊□●　　　
+            </pre>
+            ケイ　＋　カク
+          </td>
+          <td style="font-size: 200%; vertical-align: middle">
+            →　計画
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section id="other-sounds">
+      <div lang="ja">
+        <h2>３　その他の音</h2>
+        <p>小書き文字の「ァィゥェォャュョ」は、ＲＫ行とする。</p>
+      </div>
+      <div lang="en">
+        <h2>3　Other Sounds</h2>
+        <p>The small kana letters ァ, ィ, ゥ, ェ, ォ, ャ, ュ, ョ can be written be combining the vowel chord with the <code>RK</code> keys.</p>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□■　
+□□■□□
+　　　●□
+            </pre>
+            ァ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□■　
+□□■□□
+　　　□□
+            </pre>
+            ィ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□■　
+□□■□□
+　　　□●
+            </pre>
+            ゥ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□■　
+□□■□●
+　　　□□
+            </pre>
+            ェ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□■　
+□□■□□
+　　　●●
+            </pre>
+            ォ
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□■　
+□□■□●
+　　　●□
+            </pre>
+            ャ
+          </td>
+          <td></td>
+          <td>
+            <pre class="keyboard">
+　□□■　
+□□■□●
+　　　□●
+            </pre>
+            ュ
+          </td>
+          <td></td>
+          <td>
+            <pre class="keyboard">
+　□□■　
+□□■□●
+　　　●●
+            </pre>
+            ョ
+          </td>
+        </tr>
+      </table>
+      <div lang="ja">
+        <p>「わ行」の流用（「ワ・イ・ー・ヲ」以外は例外的使用）</p>
+      </div>
+      <div lang="en">
+        <p>Exceptions using the わ series (other than ワ, イ, ー, ヲ)</p>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□■■　
+□□■■□
+　　　●□
+            </pre>
+            ワ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□■■　
+□□■■□
+　　　□□
+            </pre>
+            イ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□■■　
+□□■■□
+　　　□●
+            </pre>
+            ン
+          </td>
+          <td>
+            <pre class="keyboard">
+　□■■　
+□□■■●
+　　　□□
+            </pre>
+            ー
+          </td>
+          <td>
+            <pre class="keyboard">
+　□■■　
+□□■■□
+　　　●●
+            </pre>
+            ヲ
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□■■　
+□□■■●
+　　　●□
+            </pre>
+            ヮ
+          </td>
+          <td></td>
+          <td>
+            <pre class="keyboard">
+　□■■　
+□□■■●
+　　　□●
+            </pre>
+            ッ
+          </td>
+          <td></td>
+          <td>
+            <pre class="keyboard">
+　□■■　
+□□■■●
+　　　●●
+            </pre>
+            ヴ
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section id="numbers-letters">
+      <div lang="ja">
+        <h2>４　数字・英字</h2>
+        <p>数字・英字は「読み」＋Ｖ（左右それぞれ1字）</p>
+        <h3>４.１　数字</h3>
+      </div>
+      <div lang="en">
+        <h2>4　Numbers and English Letters</h2>
+        <p>Numbers and English letters are written by combining the reading with the <code>V</code> key. You may write one character on each side.</p>
+        <h3>4.1　Numbers</h3>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□■■　
+▲□■■□
+　　　□□
+            </pre>
+            １（い）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□■□　
+▲□■□□
+　　　□□
+            </pre>
+            ２（に）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+▲□□■□
+　　　●□
+            </pre>
+            ３（さ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+▲□□□●
+　　　●●
+            </pre>
+            ４（よ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□Ｍ■　
+▲□□□□
+　　　●●
+            </pre>
+            ５（ご）
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□□　
+▲□■□□
+　　　●●
+            </pre>
+            ６（ろ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□■□　
+▲□■□□
+　　　●□
+            </pre>
+            ７（な）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+▲□■■□
+　　　●□
+            </pre>
+            ８（は）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□■　
+▲□□□□
+　　　□●
+            </pre>
+            ９（く）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+▲□■□●
+　　　□□
+            </pre>
+            ０（れ）
+          </td>
+        </tr>
+      </table>
+      <div lang="ja">
+        <p class="contin">（用例１　数字）</p>
+      </div>
+      <div lang="en">
+        <p class="contin">(Example 1: Numbers)</p>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□□　　　□□□　
+▲□□■□　□■■□▲
+　　　●□＊□●　　　
+            </pre>
+            ３８
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　　　□■▲　
+▲□■□□　□□□□□
+　　　●●＊□●　　　
+            </pre>
+            ６まん
+          </td>
+          <td style="font-size: 125%; vertical-align: middle">
+            →　３８６万
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□■□　　　□□□　
+▲□■□□　●□□□▲
+　　　□□＊●●　　　
+            </pre>
+            ２４
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　　　□■▲　
+▲▲□□□　●□□□□
+　　　●●＊□●　　　
+            </pre>
+            おくえん
+          </td>
+          <td style="font-size: 125%; vertical-align: middle">
+            →　２４億円
+          </td>
+        </tr>
+      </table>
+      <div lang="ja">
+        <h3>４.２　英字</h3>
+      </div>
+      <div lang="en">
+        <h3>4.2　English Letters</h3>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□□　
+▲□□□●
+　　　□□
+            </pre>
+            Ａ（え）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□Ｍ□　
+▲□■■□
+　　　□□
+            </pre>
+            Ｂ（び）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+▲□□■□
+　　　□□
+            </pre>
+            Ｃ（し）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□Ｍ■　
+▲□□■●
+　　　□□
+            </pre>
+            Ｄ（で）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□■■　
+▲□■■●
+　　　□□
+            </pre>
+            Ｅ（ー）
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□□　
+▲□■■□
+　　　□●
+            </pre>
+            Ｆ（ふ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□Ｍ□　
+▲□□■□
+　　　□□
+            </pre>
+            Ｇ（じ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□■　
+▲□□■□
+　　　□□
+            </pre>
+            Ｈ（ち）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+▲□□□□
+　　　●□
+            </pre>
+            Ｉ（あ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□Ｍ□　
+▲□□■●
+　　　□□
+            </pre>
+            Ｊ（ぜ）
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□■　
+▲□□□●
+　　　□□
+            </pre>
+            Ｋ（け）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+▲□■□□
+　　　□●
+            </pre>
+            Ｌ（る）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□■□　
+▲□□□□
+　　　□●
+            </pre>
+            Ｍ（む）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□■□　
+▲□■□□
+　　　□●
+            </pre>
+            Ｎ（ぬ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+▲□□□□
+　　　●●
+            </pre>
+            Ｏ（お）
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□Ｋ　
+▲□■■□
+　　　□□
+            </pre>
+            Ｐ（ぴ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□■　
+▲□□□●
+　　　□●
+            </pre>
+            Ｑ（きゅ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+▲□■□□
+　　　●□
+            </pre>
+            Ｒ（ら）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　
+▲□□■□
+　　　□●
+            </pre>
+            Ｓ（す）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□■　
+▲□□■●
+　　　□□
+            </pre>
+            Ｔ（て）
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□□　
+▲□□□●
+　　　□●
+            </pre>
+            Ｕ（ゆ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□Ｍ□　
+▲□■■□
+　　　□●
+            </pre>
+            Ｖ（ぶ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□Ｍ■　
+▲□□■□
+　　　●□
+            </pre>
+            Ｗ（だ）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□■　
+▲□□□□
+　　　□□
+            </pre>
+            Ｘ（き）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□■■　
+▲□■■□
+　　　●□
+            </pre>
+            Ｙ（わ）
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□Ｍ□　
+▲□□■□
+　　　□●
+            </pre>
+            Ｚ（ず）
+          </td>
+          <td></td>
+          <td>
+            <pre class="keyboard">
+　□■■　
+▲□■■□
+　　　□●
+            </pre>
+            ．（ん）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□■■　
+▲□■■□
+　　　●●
+            </pre>
+            ，（を）
+          </td>
+          <td>
+            <pre class="keyboard">
+　□Ｍ■　
+▲□□■□
+　　　□●
+            </pre>
+            ・（づ）
+          </td>
+        </tr>
+      </table>
+      <div lang="ja">
+        <p class="contin">（用例２　英字）</p>
+      </div>
+      <div lang="en">
+        <p class="contin">(Example 2: English Letters)</p>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□■□　　　■□□　
+▲□■□□　□■□□▲
+　　　□●＊□□　　　
+            </pre>
+            ＮＨ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□■　　　□□□　
+▲□□□●　□■■□□
+　　　□□＊□●　　　
+            </pre>
+            Ｋは
+          </td>
+          <td style="font-size: 125%; vertical-align: middle">
+            →　ＮＨＫは
+          </td>
+        </tr>
+      </table>
+      <br>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□□　　　□□□　
+▲□□■●　□□■□▲
+　　　□□＊□●　　　
+            </pre>
+            ＪＲ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□■□　　　□□□　
+□□■□□　□■□□□
+　　　□□＊□□　　　
+            </pre>
+            にし
+          </td>
+          <td>
+            <pre class="keyboard">
+　□■□　　　□□▲　
+□□■□□　□■■□□
+　　　□□＊●●　　　
+            </pre>
+            にほん
+          </td>
+          <td style="font-size: 125%; vertical-align: middle">
+            →　ＪＲ西日本
+          </td>
+        </tr>
+      </table>
+      <br>
+      <table>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□□　　　□□□　
+▲□□■□　●□□□▲
+　　　□□＊□□　　　
+            </pre>
+            ＣＡ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　　　■■□　
+▲□■■□　●■■□▲
+　　　□●＊□□　　　
+            </pre>
+            ＶＥ
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□□　　　□■□　
+▲□■□□　□□■□□
+　　　●□＊●●　　　
+            </pre>
+            Ｒの
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <pre class="keyboard">
+　□□□　　　□□□　
+▲□■■□　□■□□▲
+　　　□●＊□●　　　
+            </pre>
+            Ｖ３
+          </td>
+          <td>
+            <pre class="keyboard">
+　□■■　　　□□□　
+▲□■■□　●□■□▲
+　　　□●＊□□　　　
+            </pre>
+            .０
+          </td>
+          <td>
+            <pre class="keyboard">
+　□□■　　　□□□　
+□□□■●　□■□□□
+　　　□□＊●□　　　
+            </pre>
+            です
+          </td>
+          <td style="font-size: 125%; vertical-align: middle">
+            →　ＣＡＶＥＲの<br>　　Ｖ３.０です
+          </td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>

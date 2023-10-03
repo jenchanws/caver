@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Inter, "M PLUS Rounded 1c", "Noto Sans JP", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header {
+  line-height: 1.5em;
+}
+
+pre {
+  font-family: "M PLUS Rounded 1c";
+}
+
+.note {
+  margin-top: 30px;
+  background-color: #fff8c7;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 35em;
+  line-height: 1.5em;
+}
+
+section {
+  text-align: center;
+  padding: 20px 20px;
+}
+
+section h1 {
+  margin-bottom: 0;
+}
+
+section h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+
+section h3 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+
+section div[lang="ja"],
+section div[lang="en"] {
+  display: inline-block;
+  text-align: left;
+  width: 40em;
+  padding: 10px 40px;
+  vertical-align: top;
+}
+
+section p {
+  text-indent: 2em;
+  line-height: 1.75em;
+}
+
+section p.contin {
+  text-indent: 0;
+}
+
+section li {
+  line-height: 1.75em !important;
+}
+
+ol,
+ul,
+li {
+  margin: 0;
+  line-height: 1.5em;
+}
+
+code {
+  font-family: "Azeret Mono";
+}
+
+.steno {
+  width: 34em;
+  margin: 1em auto;
+  text-align: left !important;
+}
+
+.line {
+  font-family: "Azeret Mono", "JetBrains Mono", "Courier New", Courier,
+    monospace;
+  letter-spacing: 1px;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  white-space: pre;
+  margin-right: 1em;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 6px 12px;
+}
+
+:first-child > .line {
+  border-top: 1px solid black;
+  padding-top: 4px;
+}
+:last-child > .line {
+  border-bottom: 1px solid black;
+  padding-bottom: 4px;
+}
+
+.keyboard.large {
+  font-size: 200%;
+  line-height: 1em;
+}
+
+td {
+  text-align: center;
+  padding: 0 1em;
+  vertical-align: top;
+}
+
+td .keyboard {
+  font-size: 125%;
+  line-height: 1em;
+  margin-bottom: -0.5em;
+}
+
+table {
+  margin: 0 auto;
+}
+
+.keyboard.inline {
+  display: inline-block;
+}
+
+@counter-style lettered {
+  system: extends lower-alpha;
+  prefix: "（";
+  suffix: "）";
+}
+
+.lettered {
+  list-style-type: lettered;
+  margin-left: 2em;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+  color: red;
+}
+
+.briefs, .v-briefs, .x-briefs {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.briefs th, .briefs td {
+  padding: 1em;
+  border: 1px solid black;
+}
+
+.v-briefs td {
+  text-align: left;
+  padding: 0.5em;
+}
+
+.v-briefs tr:first-child td {
+  border-top: 1px solid black;
+}
+
+.v-briefs tr:last-child td {
+  border-bottom: 1px solid black;
+}
+
+.v-briefs td:nth-child(odd) {
+  font-weight: bold;
+  border-left: 1px solid black;
+  width: 3em;
+}
+
+.v-briefs td:nth-child(even) {
+  border-right: 1px solid black;
+  width: 6em;
+}
+
+.x-briefs th {
+  padding: 1em;
+  border: 1px solid black;
+}
+
+.x-briefs td {
+  padding: 0.5em 1em;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.x-briefs tr:last-child td {
+  border-bottom: 1px solid black;
+}
